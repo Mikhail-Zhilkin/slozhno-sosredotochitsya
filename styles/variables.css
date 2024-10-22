@@ -10,12 +10,9 @@
   --section-title-color: #ff0070;
   --hover-color: #ff007040;
   --focus-color: 1px solid #ff0070;
-  --border-button-auto: 1px solid var(--button-color);
-  --border-button-dark: none;
-  --border-button-light: none;
+  --border-button: 1px solid var(--button-color);
   --visible-rec: visible;
   --main-font: "IBM Plex Mono";
   --font-size: 18px;
-  --accent-font-size: 116px;
   --side-margin: 20px;
 }
