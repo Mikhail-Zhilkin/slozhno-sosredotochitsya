@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: var(--bg-color, #000028);
   width: 100%;
   height: 100vh;
   font-family: var(--main-font, monospace);
@@ -139,11 +140,8 @@
 
 .section {
   display: grid;
-  gap: 20px;
-}
-
-.section-why {
   grid-template-columns: calc((100% - 40px) / 3) 1fr;
+  gap: 20px;
 }
 
 .card {
@@ -154,11 +152,7 @@
   font-weight: 400;
 }
 
-.card-position-why {
-  grid-column: 2;
-}
-
-.section-title {
+.section__title {
   color: var(--section-title-color, #ff0070);
   font-size: var(--font-size, 18px);
 }
@@ -186,16 +180,11 @@
   outline: 1px solid var(--main-color, #f1b2ce);
 }
 
-.section-what {
+.cards-grid {
+  grid-column: 1 / -1;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card-position-what {
-  grid-column: 1;
-}
-
-.section-how {
-  grid-template-columns: calc((100% - 40px) / 3) 1fr;
+  gap: 20px;
 }
 
 .cards-flex {
@@ -284,16 +273,12 @@
     margin-block-end: 183px;
   }
 
-  .section-why {
+  .section {
     column-gap: 27px;
   }
 
-  .card-m {
-    grid-column: 1 / -1;
-  }
-
-  .section-how {
-    column-gap: 27px;
+  .cards-grid {
+    grid-template-columns: 1fr;
   }
 }
 
