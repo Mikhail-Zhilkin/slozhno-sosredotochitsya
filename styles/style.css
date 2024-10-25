@@ -180,17 +180,16 @@
   outline: 1px solid var(--main-color, #f1b2ce);
 }
 
-.cards-grid {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.cards-flex {
+.cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.cards-other-layout {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .subtitle {
@@ -277,7 +276,7 @@
     column-gap: 27px;
   }
 
-  .cards-grid {
+  .cards-other-layout {
     grid-template-columns: 1fr;
   }
 }
